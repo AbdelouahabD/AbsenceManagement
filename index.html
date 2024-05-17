@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register & Login</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="signup" style="display:none;">
+      <h1 class="form-title">Registre</h1>
+      <form method="post" action="register.php">
+        <div class="input-group">
+        
+           <input type="text" name="fName" id="fName" placeholder="nom" required>
+          
+        </div>
+        <div class="input-group">
+          
+            <input type="text" name="lName" id="lName" placeholder="prenom" required>
+           
+        </div>
+        <div class="input-group">
+        
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            
+        </div>
+        <div class="input-group">
+          
+            <input type="password" name="password" id="password" placeholder="mot de passe" required>
+            
+        </div>
+       <input type="submit" class="btn" value="S'inscrire" name="inscription">
+      </form>
+      <p class="or">
+        ----------ou--------
+      </p>
+      
+      <div class="links">
+        <p>Vous avez déjà un compte?</p>
+        <button id="signInButton">Connectez-vous</button>
+      </div>
+    </div>
+
+    <div class="container" id="signIn">
+        <h1 class="form-title">Connectez-vous</h1>
+        <form method="post" action="register.php">
+          <div class="input-group">
+             
+             
+              <input type="email" name="email" id="email" placeholder="Email" required>
+             
+          </div>
+          <div class="input-group">
+              
+              <input type="password" name="password" id="password" placeholder="mot de passe" required>
+             
+          </div>
+         
+         <input type="submit" class="btn" value="Connectez-vous" name="connectez">
+        </form>
+        <p class="or">
+          ----------ou--------
+        </p>
+        
+        <div class="links">
+          <p>Vous n'avez pas encore de compte ?</p>
+          <button id="signUpButton">S'inscrire</button>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
